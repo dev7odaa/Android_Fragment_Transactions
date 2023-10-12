@@ -28,35 +28,55 @@
                 android:layout_height="wrap_content"
                 android:text="@string/lion"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"/>
 
             <Button
                 android:id="@+id/btn_elephant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/elephant"
-                android:layout_marginEnd="8dp"/>
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/white"
+                android:layout_marginEnd="8dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"/>
 
             <Button
                 android:id="@+id/btn_dog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dog"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"/>
 
             <Button
                 android:id="@+id/btn_cat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cat"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"/>
 
             <Button
                 android:id="@+id/btn_sheep"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sheep"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp"/>
 
         </LinearLayout>
     </HorizontalScrollView>

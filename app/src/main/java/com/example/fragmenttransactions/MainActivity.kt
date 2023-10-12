@@ -3,6 +3,7 @@ package com.example.fragmenttransactions
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -37,11 +38,76 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when(view?.id) {
-            R.id.btn_lion -> replaceFragment(LionFragment())
-            R.id.btn_elephant -> replaceFragment(ElephantFragment())
-            R.id.btn_dog -> replaceFragment(DogFragment())
-            R.id.btn_cat -> replaceFragment(CatFragment())
-            R.id.btn_sheep -> replaceFragment(SheepFragment())
+            R.id.btn_lion -> {
+                binding.btnLion.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
+                binding.btnLion.setTextColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnElephant.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnElephant.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnDog.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnDog.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnCat.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnCat.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnSheep.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnSheep.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                replaceFragment(LionFragment())
+            }
+
+            R.id.btn_elephant -> {
+                binding.btnLion.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnLion.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnElephant.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
+                binding.btnElephant.setTextColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnDog.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnDog.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnCat.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnCat.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnSheep.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnSheep.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                replaceFragment(ElephantFragment())
+            }
+
+            R.id.btn_dog -> {
+                binding.btnLion.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnLion.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnElephant.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnElephant.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnDog.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
+                binding.btnDog.setTextColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnCat.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnCat.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnSheep.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnSheep.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                replaceFragment(DogFragment())
+            }
+
+            R.id.btn_cat -> {
+                binding.btnLion.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnLion.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnElephant.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnElephant.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnDog.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnDog.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnCat.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
+                binding.btnCat.setTextColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnSheep.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnSheep.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                replaceFragment(CatFragment())
+            }
+
+            R.id.btn_sheep -> {
+                binding.btnLion.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnLion.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnElephant.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnElephant.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnDog.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnDog.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnCat.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+                binding.btnCat.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                binding.btnSheep.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
+                binding.btnSheep.setTextColor(ContextCompat.getColor(this, R.color.white))
+                replaceFragment(SheepFragment())
+            }
+
             else -> {}
         }
     }
