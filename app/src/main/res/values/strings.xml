@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fragment Transactions</string>
+    <string name="sheep">Sheep</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="elephant">Elephant</string>
+    <string name="lion">Lion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lion_cartoon">Lion Cartoon</string>
+    <string name="dog_cartoon">Dog Cartoon</string>
+    <string name="elephant_cartoon">Elephant Cartoon</string>
+    <string name="sheep_cartoon">Sheep Cartoon</string>
+    <string name="cat_cartoon">Cat Cartoon</string>
+</resources>
